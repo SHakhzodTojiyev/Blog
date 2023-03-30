@@ -1,0 +1,61 @@
+{% load static %}
+<div id="atbs-sticky-header" class="sticky-header js-sticky-header">
+    <!-- Navigation bar -->
+    <nav class="navigation-bar navigation-bar--fullwidth hidden-xs hidden-sm">
+        <div class="navigation-bar__inner">
+            <div class="navigation-bar__section">
+                <a href="#atbs-offcanvas-primary"
+                   class="offcanvas-menu-toggle navigation-bar-btn js-atbs-offcanvas-toggle">
+                    <i class="mdicon mdicon-menu icon--2x"></i>
+                </a>
+                <div class="site-logo header-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="navigation-wrapper navigation-bar__section js-priority-nav">
+                <ul id="menu-main-menu-1" class="navigation navigation--main navigation--inline">
+                    <li class="menu-item-has-children">
+                        <a href="#">Homepage</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                            <li><a href="home-3.html">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./single-1.html">Single</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Archive</a>
+                        <ul class="sub-menu">
+                            <li><a href="category.html">Category</a></li>
+                            <li><a href="tags.html">Tags</a></li>
+                            <li><a href="author.html">Author</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navigation-bar__section">
+                <a href="#login-modal" class="navigation-bar__login-btn navigation-bar-btn" data-toggle="modal"
+                   data-target="#login-modal"><i class="mdicon mdicon-person"></i></a>
+                <button type="submit" class="navigation-bar-btn js-search-dropdown-toggle"><i
+                        class="mdicon mdicon-search"></i></button>
+            </div>
+        </div> <!-- .navigation-bar__inner -->
+    </nav><!-- Navigation-bar -->
+</div>
