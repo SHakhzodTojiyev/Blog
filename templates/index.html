@@ -1,126 +1,86 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <!-- Basic -->
-    <meta charset="UTF-8">
-    <title>{% block title %}{% endblock  %}</title>
-    <meta name="keywords" content="HTML5 News Magazine Template"/>
-    <meta name="description" content="Unidark - Ultimate News and Magazine Template">
-    <meta name="author" content="designuptodate.com">
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="keywords" content="HTML5 News Magazine Template" />
+    <meta
+      name="description"
+      content="Unidark - Ultimate News and Magazine Template"
+    />
+    <meta name="author" content="designuptodate.com" />
     <!-- Favicon -->
-    <link rel="icon" href="{% static 'img/favicon.png' %}" sizes="32x32"/>
-    <link rel="icon" href="{% static 'img/favicon.png' %}" sizes="192x192"/>
-    <link rel="apple-touch-icon-precomposed" href="{% static 'img/favicon.png' %}"/>
-    <meta name="msapplication-TileImage" content="{% static 'img/favicon.png' %}"/>
+    <link rel="icon" href="{% static 'img/favicon.png' %}" sizes="32x32" />
+    <link rel="icon" href="{% static 'img/favicon.png' %}" sizes="192x192" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="{% static 'img/favicon.png' %}"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="{% static 'img/favicon.png' %}"
+    />
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Theme CSS -->
-    <link href="{% static 'css/import-style.css' %}" type="text/css" rel="stylesheet">
+    <link
+      href="{% static 'css/import-style.css' %}"
+      type="text/css"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body class="home home-1 has-block-heading-line">
-<!-- .site-wrapper -->
-<div class="site-wrapper" >
-    <!-- header --> 
-    {% include 'layouts/header.html' %}
-    <!-- header -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="home home-1 has-block-heading-line">
+    <!-- .site-wrapper -->
+    <div class="site-wrapper">
+      <!-- header -->
+      {% include 'layouts/header.html' %}
+      <!-- header -->
 
-    {% block home %}{% endblock home %}
-    
-    {% block handler404 %}{% endblock handler404 %}
+      {% block home %}{% endblock home %}
+      {% block contact %}{% endblock contact %} 
+      {% block handler404 %}{% endblock handler404 %}
 
-    <!-- content -->
+      <!-- content -->
 
-    <!-- content -->
+      <!-- content -->
 
-    <!-- footer -->
-    {% include 'layouts/footer.html' %} 
-    <!-- footer -->
+      <!-- footer -->
+      {% include 'layouts/footer.html' %}
+      <!-- footer -->
 
-    <!-- sticky_header -->
-    {% include 'layouts/sticky_header.html' %}
-    <!-- sticky_header -->
+      <!-- sticky_header -->
+      {% include 'layouts/sticky_header.html' %}
+      <!-- sticky_header -->
 
-    <!-- login_modal -->
-    {% include 'layouts/login_modal.html' %}
-    <!-- login_modal -->
+      <!-- login_modal -->
+      {% include 'layouts/login_modal.html' %}
+      <!-- login_modal -->
 
-    <!-- subscribe_modal -->
-    {% include 'layouts/subscribe_modal.html' %}
-    <!-- subscribe_modal -->
+      <!-- subscribe_modal -->
+      {% include 'layouts/subscribe_modal.html' %}
+      <!-- subscribe_modal -->
 
-    <!-- Off-canvas menu -->
-    <div id="atbs-offcanvas-primary" class="atbs-offcanvas js-atbs-offcanvas js-perfect-scrollbar">
-        <div class="atbs-offcanvas__title">
-            <h2 class="site-logo"><a href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a></h2>
-            <ul class="social-list list-horizontal">
-                <li><a href="#facebook"><i class="mdicon mdicon-facebook"></i></a>
-                </li>
-                <li><a href="#"><i class="mdicon mdicon-twitter"></i></a>
-                </li>
-                <li><a href="#"><i class="mdicon mdicon-youtube"></i></a>
-                </li>
-                <li><a href="#"><i class="mdicon mdicon-google-plus"></i></a>
-                </li>
-            </ul>
-            <a href="#atbs-offcanvas-primary" class="atbs-offcanvas-close js-atbs-offcanvas-close"
-               aria-label="Close"><span aria-hidden="true">&#10005;</span></a>
-        </div>
+      <!-- Off-canvas menu -->
+      {% include 'layouts/off_canvas_menu.html' %}
+      <!-- Off-canvas menu -->
 
-        <div class="atbs-offcanvas__section atbs-offcanvas__section-navigation">
-            <ul id="menu-offcanvas-menu" class="navigation navigation--offcanvas">
-                <li class="menu-item-has-children">
-                    <a href="#">Home Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="index.html">Home 1</a></li>
-                        <li><a href="home-2.html">Home 2</a></li>
-                        <li><a href="home-3.html">Home 3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="./single-1.html">Single</a>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Archive</a>
-                    <ul class="sub-menu">
-                        <li><a href="category.html">Category</a></li>
-                        <li><a href="tags.html">Tags</a></li>
-                        <li><a href="author.html">Author</a></li>
-                    </ul>
-                </li>
+      <!-- Go top icon -->
+      <a href="#" class="atbs-go-top btn btn-default hidden-xs js-go-top-el"
+        ><i class="mdicon mdicon-arrow_upward"></i
+      ></a>
+    </div>
+    <!-- .site-wrapper -->
 
-                <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="search.html">Search</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="404.html">404</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="contact.html">Contact</a>
-                </li>
-
-            </ul>
-        </div>
-
-        <div class="atbs-offcanvas__section visible-xs visible-sm">
-            <div class="text-center">
-                <a href="#login-modal" class="btn btn-default btn-form-author" data-toggle="modal" data-target="#login-modal"><i
-                        class="mdicon mdicon-person mdicon--first"></i><span>Login / Sign up</span></a>
-            </div>
-        </div>
-    </div><!-- Off-canvas menu -->
-
-    <!-- Go top icon -->
-    <a href="#" class="atbs-go-top btn btn-default hidden-xs js-go-top-el"><i class="mdicon mdicon-arrow_upward"></i></a>
-</div><!-- .site-wrapper -->
-
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/sidebar.js' %}"></script>
-<script src="{% static 'js/owl-carousel.min.js' %}"></script>
-<script src="{% static 'js/scripts.js' %}"></script>
-</body>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/sidebar.js' %}"></script>
+    <script src="{% static 'js/owl-carousel.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
 </html>

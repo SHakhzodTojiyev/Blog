@@ -1,0 +1,63 @@
+{% load static %}
+
+<div id="atbs-offcanvas-primary" class="atbs-offcanvas js-atbs-offcanvas js-perfect-scrollbar">
+    <div class="atbs-offcanvas__title">
+        <h2 class="site-logo"><a href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a></h2>
+        <ul class="social-list list-horizontal">
+            <li><a href="#facebook"><i class="mdicon mdicon-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="mdicon mdicon-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="mdicon mdicon-youtube"></i></a>
+            </li>
+            <li><a href="#"><i class="mdicon mdicon-google-plus"></i></a>
+            </li>
+        </ul>
+        <a href="#atbs-offcanvas-primary" class="atbs-offcanvas-close js-atbs-offcanvas-close"
+           aria-label="Close"><span aria-hidden="true">&#10005;</span></a>
+    </div>
+
+    <div class="atbs-offcanvas__section atbs-offcanvas__section-navigation">
+        <ul id="menu-offcanvas-menu" class="navigation navigation--offcanvas">
+            <li class="menu-item-has-children">
+                <a href="#">Home Pages</a>
+                <ul class="sub-menu">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home-2.html">Home 2</a></li>
+                    <li><a href="home-3.html">Home 3</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="./single-1.html">Single</a>
+            </li>
+            <li class="menu-item-has-children">
+                <a href="#">Archive</a>
+                <ul class="sub-menu">
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="tags.html">Tags</a></li>
+                    <li><a href="author.html">Author</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item-has-children">
+                <a href="#">Pages</a>
+                <ul class="sub-menu">
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="404.html">404</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="atbs-offcanvas__section visible-xs visible-sm">
+        <div class="text-center">
+            <a href="#login-modal" class="btn btn-default btn-form-author" data-toggle="modal" data-target="#login-modal"><i
+                    class="mdicon mdicon-person mdicon--first"></i><span>Login / Sign up</span></a>
+        </div>
+    </div>
+</div>
