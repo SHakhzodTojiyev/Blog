@@ -1,12 +1,13 @@
 {% load static %}
+
 <header class="site-header">
     <!-- Mobile header -->
     <div id="atbs-mobile-header" class="mobile-header visible-xs visible-sm">
         <div class="mobile-header__inner mobile-header__inner--flex">
             <div class="header-branding header-branding--mobile mobile-header__section text-left">
                 <div class="header-logo header-logo--mobile flexbox__item text-left">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="logo">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -32,7 +33,7 @@
 
         <div class="header-social header-social-vertical">
             <ul class="social-list social-list--sm list-horizontal social-list--inverse">
-                <li><a href="#" target="_blank"><i class="mdicon mdicon-facebook"></i></a></li>
+                <li><a href="#facebook" target="_blank"><i class="mdicon mdicon-facebook"></i></a></li>
                 <li><a href="#" target="_blank"><i class="mdicon mdicon-twitter"></i></a></li>
                 <li><a href="#" target="_blank"><i class="mdicon mdicon-linkedin"></i></a></li>
             </ul>
@@ -43,8 +44,8 @@
         <div class="navigation-bar__inner flexbox-wrap flexbox-center-y">
             <div class="navigation-bar__section flex-box align-item-center">
                 <div class="header-logo">
-                    <a href="index.html">
-                        <img src="./img/logo.png" alt="File not found" width="130">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="File not found" width="130">
 
                     </a>
                 </div>
