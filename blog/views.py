@@ -1,7 +1,8 @@
-from django.http import HttpResponse
-from django.template import loader
+from django.shortcuts import render
 
-def index(request):
-  template = loader.get_template('index.html')
-  return HttpResponse(template.render())
+def home(request):
+  context = {'title': 'salom'}
+  return render(request, 'pages/home.html', context)
 
+def handler_404(request, exception):
+    return render(request, 'pages/404.html', {})
