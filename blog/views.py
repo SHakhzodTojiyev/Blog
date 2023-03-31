@@ -4,6 +4,10 @@ def home(request):
   context = {'title': 'Home'}
   return render(request, 'pages/home.html', context)
 
+def author(request):
+  context = {'title': 'Author'}
+  return render(request, 'pages/author.html', context)
+
 def contact(request):
   context = {'title': 'Contact'}
   return render(request, 'pages/contact.html', context)
